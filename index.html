@@ -1,0 +1,52 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="with=device-width, intial-scale=1.0">
+	<title>MHH</title>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+<section class ="header">
+	<nav>
+		<a href="index.html"><img src="images/logo.PNG"></a>
+		<div class="nav-links" id="navLinks">
+			<i class="fa fa-times" onClick="hideMenu()"></i>
+			<ul>
+				<li><a href="">HOME</a></li>
+				<li><a href="">ABOUT</a></li>
+				<li><a href="">LOREM</a></li>
+				<li><a href="">IPSUM</a></li>
+				<li><a href="">CONTACT</a></li>
+			</ul>
+		</div>
+		<i class="fa fa-bars" onClick="showMenu()"></i>
+	</nav>
+<div class="text-box">
+	<h1>Muhammad Haras Hassan</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer venenatis enim non venenatis sagittis. Nulla facilisi.<br>Sed ultrices massa lorem, nec viverra enim placerat non.
+	</p>
+	<a href="" class="hero-btn">Lorem Ipsum</a>
+	</div>	
+	
+</section>
+<!-----Javascript for Toggling Menu----->
+<script>
+	
+	var navLinks = document.getElementById("navLinks");
+	function showMenu(){
+		navLinks.style.right = "0";
+	}
+	function hideMenu(){
+		navLinks.style.right = "-200px";
+	}
+	
+</script>
+	
+	
+</body>
+</html>
